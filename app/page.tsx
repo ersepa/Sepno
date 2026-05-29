@@ -15,7 +15,7 @@ export default function Home() {
     "/5.jpeg",
     "/6.jpg",
     "/7.GIF",
-    "/8.gif",
+    "/8.GIF",
     "/9.jpg",
     "/10.jpg",
     "/11.jpeg",
