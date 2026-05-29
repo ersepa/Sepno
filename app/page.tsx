@@ -1,28 +1,28 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import DomeGallery from '@/components/DomeGallery';
-import InteractionFlow from '@/components/InteractionFlow';
+import { useState } from "react";
+import DomeGallery from "@/components/DomeGallery";
+import InteractionFlow from "@/components/InteractionFlow";
 
 export default function Home() {
   const [showGallery, setShowGallery] = useState(false);
 
   const userImages = [
-    '/1.jpeg',
-    '/2.jpeg',
-    '/3.jpeg',
-    '/4.jpeg',
-    '/5.jpeg',
-    '/6.jpeg',
-    '/7.jpeg',
-    '/8.jpeg',
-    '/9.jpeg',
-    '/10.jpeg',
-    '/11.jpeg',
-    '/12.jpeg',
-    '/13.jpeg',
-    '/14.jpeg',
-    '/15.jpeg',
+    "/1.jpeg",
+    "/2.jpeg",
+    "/3.jpeg",
+    "/4.jpeg",
+    "/5.jpeg",
+    "/6.jpg",
+    "/7.GIF",
+    "/8.gif",
+    "/9.jpg",
+    "/10.jpg",
+    "/11.jpeg",
+    "/12.jpeg",
+    "/13.GIF",
+    "/14.jpeg",
+    "/15.jpeg",
   ];
 
   return (
