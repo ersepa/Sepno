@@ -1,11 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import DomeGallery from "@/components/DomeGallery";
 import InteractionFlow from "@/components/InteractionFlow";
 
 export default function Home() {
   const [showGallery, setShowGallery] = useState(false);
+
+  const audioRef = useRef<HTMLAudioElement>(null);
+
+  const startAudio = () => {
+    audioRef.current?.play();
+  };
 
   const userImages = [
     "/1.jpeg",
@@ -26,8 +32,10 @@ export default function Home() {
   ];
 
   return (
-    <main className="w-screen h-screen bg-[#060010]">
-      <audio src="/pretty.mp3" autoPlay loop className="hidden" />
+    <main onClick={startAudio} className="w-screen h-screen bg-[#060010]">
+      <audio ref={audioRef} loop className="hidden">
+        <source src="/pretty.mp3" type="audio/mp3" />
+      </audio>
       <DomeGallery
         images={userImages}
         fit={0.8}
